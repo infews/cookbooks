@@ -6,14 +6,20 @@ Uses the [Pivotal Workstation Cookbook](http://github.com/pivotal/pivotal_workst
 
 ## Instructions
 
-* Install XCode + the command line tools (under Preferences) to get `git`
+From a clean Lion install:
+
+* Install XCode
+* Go to XCode Preferences &amp; install the command line tools (installs `git`)
+
+Then:
 
 ```sh
 	$ cd
 	$ git clone git@github.com:infews/cookbooks.git
 	$ cd cookbooks
 	$ git submodule update --init
-	$ gem install soloist
+	$ gem install chef --version 0.10.8 # 0.10.10 is broken
+	$ gem install soloist # might have to sudo here
 	$ # review all recipes
 	$ soloist
 ```
