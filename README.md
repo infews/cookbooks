@@ -17,12 +17,11 @@ Then:
 	$ cd
 	$ git clone git@github.com:infews/cookbooks.git
 	$ cd cookbooks
-	$ git submodule update --init
+	$ git submodule update --init # pulls in pivotal_workstation cookbook
+	$ cd pivotal_workstation && git pull && cd ..
 	$ gem install chef --version 0.10.8 # 0.10.10 is broken
 	$ gem install soloist # might have to sudo here
-	$ # consider pulling pivotal_workstation up to latest, or just:
-	$ # git clone https://github.com/pivotal/pivotal_workstation.git
-	$ # review all recipes
+	$ # review all recipes, starting from soloistrc
 	$ soloist
 ```
 
