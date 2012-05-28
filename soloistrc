@@ -1,0 +1,42 @@
+cookbook_paths:
+  - /Users/dwf/cookbooks
+
+# Not guaranteed to be up-to-date, so review these first
+recipes:
+  - pivotal_workstation::create_var_chef_cache
+  - pivotal_workstation::rvm
+  - pivotal_workstation::gem_no_rdoc_no_ri
+  - pivotal_workstation::java
+  - pivotal_workstation::sshd_on
+  - pivotal_workstation::screen_sharing_app
+  - pivotal_workstation::skype
+  - pivotal_workstation::bash_profile-better_history
+  - pivotal_workstation::bash_profile-ps1
+  - pivotal_workstation::bash_profile-ctrl-o
+  - pivotal_workstation::bash_profile-no_sudo_gem_install
+  - pivotal_workstation::bash_profile-git_completion
+  - pivotal_workstation::inputrc
+  - pivotal_workstation::locate_on
+  - pivotal_workstation::workspace_directory
+  - pivotal_workstation::git_config_global_defaults
+  - pivotal_workstation::git_scripts
+  - pivotal_workstation::homebrew
+  - pivotal_workstation::gitx
+  - pivotal_workstation::github_for_mac
+  - pivotal_workstation::vim
+  - pivotal_workstation::unix_essentials
+  - pivotal_workstation::global_environment_variables
+  - pivotal_workstation::dropbox
+  - pivotal_workstation::chrome
+  - pivotal_workstation::mouse_locator
+  - pivotal_workstation::defaults_fast_key_repeat_rate
+  - pivotal_workstation::postgres
+  - pivotal_workstation::imagemagick
+  - pivotal_workstation::chrome
+  - pivotal_workstation::firefox
+  - pivotal_workstation::dropbox
+  - pivotal_workstation::rubymine
+  - pivotal_workstation::rubymine_preferences_pivotal
+  - pivotal_workstation::textmate
+  - pivotal_workstation::textmate_bundles
+  - pivotal_workstation::textmate_preferences
