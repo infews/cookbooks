@@ -20,7 +20,8 @@ Then:
 	$ git submodule update --init
 	$ gem install chef --version 0.10.8 # 0.10.10 is broken
 	$ gem install soloist # might have to sudo here
-	$ # review all recipes
+	$ # consider pulling pivotal_workstation up to latest, or just reclone
+	$ review all recipes
 	$ soloist
 ```
 
