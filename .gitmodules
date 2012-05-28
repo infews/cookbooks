@@ -1,0 +1,3 @@
+[submodule "pivotal_workstation"]
+	path = pivotal_workstation
+	url = git://github.com/pivotal/pivotal_workstation
