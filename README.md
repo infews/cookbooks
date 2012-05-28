@@ -7,7 +7,7 @@ Uses the [Pivotal Workstation Cookbook](http://github.com/pivotal/pivotal_workst
 ## Instructions
 
 * Install XCode + the command line tools (under Preferences) to get `git`
-* `git clone git://github.com/infews/cookbooks`
+* `git clone git@github.com:infews/cookbooks.git`
 * From ~, `gem install soloist`
 * `cd cookbooks`
 * `git submodule update --init`
