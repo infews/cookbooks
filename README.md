@@ -8,6 +8,7 @@ Uses the [Pivotal Workstation Cookbook](http://github.com/pivotal/pivotal_workst
 
 * Install XCode + the command line tools (under Preferences) to get `git`
 
+```sh
 	$ cd
 	$ git clone git@github.com:infews/cookbooks.git
 	$ cd cookbooks
@@ -15,6 +16,7 @@ Uses the [Pivotal Workstation Cookbook](http://github.com/pivotal/pivotal_workst
 	$ gem install soloist
 	$ # review all recipes
 	$ soloist
+```
 
 ## TODO
 
