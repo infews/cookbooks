@@ -41,3 +41,4 @@ Then:
   * Pygments ?
   * Download Marked's extras and install
   * Any setup for Marked authoring of Github docs
+  * Install Google Drive
