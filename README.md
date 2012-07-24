@@ -19,8 +19,7 @@ Then:
 	$ cd cookbooks
 	$ git submodule update --init # pulls in pivotal_workstation cookbook
 	$ cd pivotal_workstation && git pull && cd ..
-	$ gem install chef --version 0.10.8 # 0.10.10 is broken
-	$ gem install soloist # might have to sudo here
+	$ sudo gem install soloist
 	$ # review all recipes, starting from soloistrc
 	$ soloist
 ```
@@ -29,16 +28,6 @@ Then:
 
 * make a new, real cookbook repo
 * Write these recipies:
-  * Todo.txt and save to /bin
   * Onsi's ShiftIt
-  * Quicksilver
   * Update all apps on Mac App store? (don't save password)
-  * Solarized for Terminal & make default (https://github.com/cap10morgan/solarized/tree/master/osx-terminal.app-colors-solarized)
-  * Solarized for Textmate (Dark and Light)
-  * Run through some of these: https://gist.github.com/2260182
   * Setup background images (move to Dropbox, symlink?, setup in SystemPrefs)
-  * pip ?
-  * Pygments ?
-  * Download Marked's extras and install
-  * Any setup for Marked authoring of Github docs
-  * Install Google Drive
