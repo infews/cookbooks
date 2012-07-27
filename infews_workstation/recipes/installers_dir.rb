@@ -1,4 +1,4 @@
 directory "for all installers (cache)" do
-  path "/Users/#{node[:username]}/installers"
+  path "/Users/#{WS_USER}/cookbooks/installers"
   action :create
 end
