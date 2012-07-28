@@ -5,10 +5,6 @@
 # * Pivotal Workstation Brew provider
 # * Dropbox being installed
 # * ~/Dropbox/todo/config being present and having the user's configuration
-#
-#
-# Copyright 2012 Infews LLC
-# Licensed via the MIT license
 
 brew "todo-txt"
 
