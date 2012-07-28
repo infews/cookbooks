@@ -14,6 +14,12 @@ pivotal_workstation_defaults "Enable the 2D Dock" do
   boolean 'true'
 end
 
+pivotal_workstation_defaults "Position the Dock on the left" do
+  domain 'com.apple.dock'
+  key 'orientation'
+  string 'left'
+end
+
 pivotal_workstation_defaults "Automatically hide and show the Dock" do
   domain 'com.apple.dock'
   key 'autohide'
@@ -33,4 +39,4 @@ pivotal_workstation_defaults "Enable iTunes track notifications in the Dock" do
 end
 
 ## Reset Launchpad
-#find ~/Library/ Application \ Support/Dock -name "*.db" -maxdepth 1 -delete
+execute 'find ~/Library/ Application \ Support/Dock -name "*.db" -maxdepth 1 -delete'
