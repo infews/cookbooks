@@ -13,6 +13,11 @@ recipes:
   - infews_workstation::marked_bonus_pack
   - infews_workstation::shiftit
   - infews_workstation::solarized
+# Not yet tested on Mountain Lion 10.8
+  - infews_workstation::os_x_defaults_dock
+  - infews_workstation::os_x_defaults_finder
+  - infews_workstation::os_x_defaults_menu_bar
+  - infews_workstation::os_x_defaults_screen
 # RUN THESE AFTER DROPBOX IS INSTALLED AND YOU'VE LOGGED IN
 #  - infews_workstation::ssh_dir_on_dropbox
 #  - infews_workstation::desktop_background_in_dropbox
