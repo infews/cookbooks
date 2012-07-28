@@ -24,10 +24,7 @@ Then:
 	$ soloist
 ```
 
-## TODO
+## License
 
-* make a new, real cookbook repo
-* Write these recipies:
-  * Onsi's ShiftIt
-  * Update all apps on Mac App store? (don't save password)
-  * Setup background images (move to Dropbox, symlink?, setup in SystemPrefs)
+Copyright 2012 Infews LLC
+Licensed via the MIT license
