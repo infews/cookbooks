@@ -4,4 +4,6 @@
 brew 'asciidoc'
 brew 'source-highlight'
 brew 'fop'
-brew 'https://raw.github.com/adamv/homebrew-alt/master/non-free/kindlegen.rb'
+
+# This appears to point to a missing file
+#brew 'https://raw.github.com/adamv/homebrew-alt/master/non-free/kindlegen.rb'

@@ -4,15 +4,15 @@ cookbook_paths:
 # Not guaranteed to be up-to-date, so review these first
 recipes:
 # - PIVOTAL WORKSTATION RECIPES FIRST
-  - infews_workstation::installers_dir
-  - infews_workstation::google_drive
-  - infews_workstation::quicksilver
-  - infews_workstation::pygments
-  - infews_workstation::todo_txt
+#  - infews_workstation::installers_dir
+#  - infews_workstation::google_drive
+#  - infews_workstation::quicksilver
+#  - infews_workstation::pygments
+#  - infews_workstation::todo_txt
   - infews_workstation::git_scribe
-  - infews_workstation::marked_bonus_pack
-  - infews_workstation::shiftit
-  - infews_workstation::soloarized
+#  - infews_workstation::marked_bonus_pack
+#  - infews_workstation::shiftit
+#  - infews_workstation::solarized
 # RUN THESE AFTER DROPBOX IS INSTALLED AND YOU'VE LOGGED IN
 #  - infews_workstation::ssh_dir_on_dropbox
 #  - infews_workstation::desktop_background_in_dropbox
