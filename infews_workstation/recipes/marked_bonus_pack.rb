@@ -3,14 +3,14 @@
 # Dependencies
 # * Marked - if you haven't bought this app yet and author Markdown, you should: http://itunes.apple.com/us/app/marked/id448925439?mt=12
 
-installers_dir = "/Users/#{WS_USER}/installers"
+installers_dir = "/Users/#{WS_USER}/cookbooks/installers"
 
 execute "Download the Marked Bonus Pack" do
   command "curl -L http://brettterpstra.com/downloads/MarkedBonusPack1.5.zip -o #{installers_dir}/MarkedBonusPack1.5.zip"
 end
 
 execute "Unzip the Marked Bonus Pack" do
-  command "cd #{installers_dir} && unzip -f MarkedBonusPack1.5.zip"
+  command "cd #{installers_dir} && unzip -o MarkedBonusPack1.5.zip"
 end
 
 directory "/Users/#{WS_USER}/Library/Services" do
