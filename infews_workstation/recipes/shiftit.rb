@@ -1,4 +1,4 @@
-installers_dir = "/Users/#{WS_USER}/installers"
+installers_dir = "/Users/#{WS_USER}/cookbooks/installers"
 
 shift_it_zip = "ShiftIt-1.5.zip"
 
@@ -7,7 +7,7 @@ execute "Download ShiftIt" do
 end
 
 execute "Unzip ShiftIt" do
-  command "cd #{installers_dir} && unzip -f #{shift_it_zip}"
+  command "cd #{installers_dir} && unzip -o #{shift_it_zip}"
 end
 
 execute "Copy ShiftIt to Applications" do
