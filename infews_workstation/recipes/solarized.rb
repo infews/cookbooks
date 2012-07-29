@@ -1,4 +1,4 @@
-installers_dir = "~/installers"
+installers_dir = "/Users/#{WS_USER}/cookbooks/installers"
 solarized_dir = "#{installers_dir}/solarized"
 
 execute "Clone cap10morgan's Solarized fork'" do
@@ -11,19 +11,20 @@ execute "Pull Solarized up to latest" do
 end
 
 terminal_directory = "#{solarized_dir}/osx-terminal.app-colors-solarized"
+
 execute "Add Solarized Dark for Terminal" do
-  command "cd #{terminal_directory} && open Solarized\ Dark\ ansi.terminal"
+  command "cd #{terminal_directory} && open 'Solarized Dark ansi.terminal'"
 end
 
 execute "Add Solarized Light for Terminal" do
-  command "cd #{terminal_directory} && open Solarized\ Light\ ansi.terminal"
+  command "cd #{terminal_directory} && open 'Solarized Light ansi.terminal'"
 end
 
 textmate_theme_directory = "#{solarized_dir}/textmate-colors-solarized"
 execute "Add Solarized Dark for TextMate" do
-  command "cd #{textmate_theme_directory} && open Solarized\ (dark).tmTheme"
+  command "cd #{textmate_theme_directory} && open 'Solarized (dark).tmTheme'"
 end
 
 execute "Add Solarized Light for TextMate" do
-  command "cd #{textmate_theme_directory} && open Solarized\ (light).tmTheme"
+  command "cd #{textmate_theme_directory} && open 'Solarized (light).tmTheme'"
 end
