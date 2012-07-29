@@ -22,6 +22,6 @@ execute "Install the Marked Services" do
 end
 
 execute "Install the Textmate bundle if Textmate is installed" do
-  command "open #{installers_dir}/MarkedBonusPack1.5/Textmate/Marked.tmbundle"
+  command "cp -r #{installers_dir}/MarkedBonusPack1.5/Textmate/Marked.tmbundle \"#{WS_HOME}/Library/Application Support/TextMate/Bundles\""
   not_if { `ls /Applications | grep TextMate`.length == 0}
 end

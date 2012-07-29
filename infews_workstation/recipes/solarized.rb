@@ -20,11 +20,13 @@ execute "Add Solarized Light for Terminal" do
   command "cd #{terminal_directory} && open 'Solarized Light ansi.terminal'"
 end
 
-textmate_theme_directory = "#{solarized_dir}/textmate-colors-solarized"
+solarized_textmate_theme_directory = "#{solarized_dir}/textmate-colors-solarized"
+textmate_themes_directory = "\"#{WS_HOME}/Library/Application Support/TextMate/Bundles\""
+
 execute "Add Solarized Dark for TextMate" do
-  command "cd #{textmate_theme_directory} && open 'Solarized (dark).tmTheme'"
+  command "cp \"#{solarized_textmate_theme_directory}/Solarized\ (dark).tmTheme\" #{textmate_themes_directory}"
 end
 
 execute "Add Solarized Light for TextMate" do
-  command "cd #{textmate_theme_directory} && open 'Solarized (light).tmTheme'"
+  command "cp \"#{solarized_textmate_theme_directory}/Solarized\ (light).tmTheme\" #{textmate_themes_directory}"
 end
