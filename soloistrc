@@ -52,9 +52,9 @@ recipes:
 #  - infews_workstation::git_scribe
 #  - infews_workstation::marked_bonus_pack
 #  - infews_workstation::shiftit
-#  - infews_workstation::solarized
+  - infews_workstation::solarized
 #  - infews_workstation::font_inconsolata
-  - infews_workstation::font_anonymous_pro
+#  - infews_workstation::font_anonymous_pro
 #  - infews_workstation::os_x_defaults_dock
 #  - infews_workstation::os_x_defaults_finder
 #  - infews_workstation::os_x_defaults_menu_bar
