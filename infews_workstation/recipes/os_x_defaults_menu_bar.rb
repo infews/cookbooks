@@ -5,23 +5,23 @@
 pivotal_workstation_defaults "Menu bar: disable transparency" do
   domain 'NSGlobalDomain'
   key 'AppleEnableMenuBarTransparency'
-  bool 'false'
+  boolean false
 end
 
 pivotal_workstation_defaults "Menu bar: turn off battery time" do
   domain 'com.apple.menuextra.battery'
   key 'ShowPercent'
-  string '"NO"'
+  string 'NO'
 end
 
 pivotal_workstation_defaults "Menu bar: turn off battery percentage" do
   domain 'com.apple.menuextra.battery'
   key 'ShowTime'
-  string '"NO"'
+  string 'NO'
 end
 
 pivotal_workstation_defaults "Disable Resume system-wide" do
   domain 'NSGlobalDomain'
   key 'NSQuitAlwaysKeepsWindows'
-  bool 'false'
+  boolean false
 end
