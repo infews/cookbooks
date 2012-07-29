@@ -22,7 +22,7 @@ recipes:
 #  - pivotal_workstation::workspace_directory
 #  - pivotal_workstation::git_config_global_defaults
 #  - pivotal_workstation::git_scripts
-  - pivotal_workstation::xquartz
+#  - pivotal_workstation::xquartz
 #  - pivotal_workstation::homebrew
 #  - pivotal_workstation::gitx
 #  - pivotal_workstation::github_for_mac
@@ -43,7 +43,7 @@ recipes:
 #  - pivotal_workstation::imagemagick
 #  - pivotal_workstation::gem_no_rdoc_no_ri
 #  - pivotal_workstation::node_js
-  - pivotal_workstation::qt
+#  - pivotal_workstation::qt
 #  - infews_workstation::installers_dir
 #  - infews_workstation::google_drive
 #  - infews_workstation::quicksilver
@@ -52,7 +52,8 @@ recipes:
 #  - infews_workstation::marked_bonus_pack
 #  - infews_workstation::shiftit
 #  - infews_workstation::solarized
-# Not yet tested on Mountain Lion 10.8
+#  - infews_workstation::font_inconsolata
+  - infews_workstation::font_anonymous_pro
 #  - infews_workstation::os_x_defaults_dock
 #  - infews_workstation::os_x_defaults_finder
 #  - infews_workstation::os_x_defaults_menu_bar
