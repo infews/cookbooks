@@ -8,10 +8,11 @@
 
 brew "todo-txt"
 
-directory "/Users/#{WS_USER}/.todo" do
+directory "#{WS_HOME}/.todo" do
   owner WS_USER
 end
 
 execute "copy config file from Dropbox" do
-  command "cp ~/Dropbox/todo/config ~/.todo/config"
+  command "cp #{WS_HOME}/Dropbox/todo/config #{WS_HOME}/.todo/config"
+  only_if { File.exist? "#{WS_HOME}/Dropbox/todo"}
 end
