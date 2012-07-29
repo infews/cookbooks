@@ -26,11 +26,11 @@ Then:
 
 ## TODO
 
-* BUG todo.sh isn't on path after brew install
 * Set MacOS clock to analog in menu bar
 * Set Fn keys as Fn keys
 * Turn off Genie animation to Dock
 * Turn on two-button mouse
+* Kill the installers directory and instead use the Chef cache
 
 ## License
 
