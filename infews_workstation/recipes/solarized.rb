@@ -30,3 +30,14 @@ end
 execute "Add Solarized Light for TextMate" do
   command "cp \"#{solarized_textmate_theme_directory}/Solarized\ (light).tmTheme\" #{textmate_themes_directory}"
 end
+
+solarized_jetbrains_theme_directory = "#{solarized_dir}/intellij-colors-solarized"
+jetbrains_theme_dir = "#{WS_HOME}/Library/Preferences/RubyMine40/colors/"
+
+execute "Add Solarized Dark for RubyMine" do
+  command "cp \"#{solarized_jetbrains_theme_directory}/Solarized\ Dark.xml\" #{jetbrains_theme_dir}"
+end
+
+execute "Add Solarized Light for RubyMine" do
+  command "cp \"#{solarized_jetbrains_theme_directory}/Solarized\ Light.xml\" #{jetbrains_theme_dir}"
+end
