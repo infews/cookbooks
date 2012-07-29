@@ -11,5 +11,5 @@ execute "Unzip ShiftIt" do
 end
 
 execute "Copy ShiftIt to Applications" do
-  command "cp -r #{installers_dir}/ShiftIt* /Applications"
+  command "cp -R #{installers_dir}/ShiftIt.app /Applications"
 end
