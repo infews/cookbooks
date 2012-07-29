@@ -26,10 +26,11 @@ pivotal_workstation_defaults "Automatically hide and show the Dock" do
   boolean true
 end
 
+# This doesn't work
 pivotal_workstation_defaults "Minimized with scaled effect" do
   domain 'com.apple.dock'
-  key 'mineffect'
-  string 'scale'
+  key ' workspaces-swoosh-animation-off'
+  boolean true
 end
 
 pivotal_workstation_defaults "Make Dock icons of hidden applications translucent" do
