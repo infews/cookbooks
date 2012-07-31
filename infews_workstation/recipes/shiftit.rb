@@ -1,15 +1,17 @@
-installers_dir = "/Users/#{WS_USER}/cookbooks/installers"
 
 shift_it_zip = "ShiftIt-1.5.zip"
 
 execute "Download ShiftIt" do
-  command "curl -L https://github.com/downloads/fikovnik/ShiftIt/#{shift_it_zip} -o #{installers_dir}/#{shift_it_zip}"
+  command "curl -L https://github.com/downloads/fikovnik/ShiftIt/#{shift_it_zip} -o #{Chef::Config[:file_cache_path]}/#{shift_it_zip}"
+  user WS_USER
 end
 
 execute "Unzip ShiftIt" do
-  command "cd #{installers_dir} && unzip -o #{shift_it_zip}"
+  command "cd #{Chef::Config[:file_cache_path]} && unzip -o #{shift_it_zip}"
+  user WS_USER
 end
 
 execute "Copy ShiftIt to Applications" do
-  command "cp -R #{installers_dir}/ShiftIt.app /Applications"
+  command "cp -R #{Chef::Config[:file_cache_path]}/ShiftIt.app /Applications"
+  user WS_USER
 end

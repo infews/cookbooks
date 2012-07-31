@@ -3,25 +3,28 @@
 # Dependencies
 # * Marked - if you haven't bought this app yet and author Markdown, you should: http://itunes.apple.com/us/app/marked/id448925439?mt=12
 
-installers_dir = "/Users/#{WS_USER}/cookbooks/installers"
-
 execute "Download the Marked Bonus Pack" do
-  command "curl -L http://brettterpstra.com/downloads/MarkedBonusPack1.5.zip -o #{installers_dir}/MarkedBonusPack1.5.zip"
+  command "curl -L http://brettterpstra.com/downloads/MarkedBonusPack1.5.zip -o #{Chef::Config[:file_cache_path]}/MarkedBonusPack.zip"
+  user WS_USER
 end
 
 execute "Unzip the Marked Bonus Pack" do
-  command "cd #{installers_dir} && unzip -o MarkedBonusPack1.5.zip"
+  command "cd #{Chef::Config[:file_cache_path]} && unzip -o MarkedBonusPack.zip"
+  user WS_USER
 end
 
 directory "/Users/#{WS_USER}/Library/Services" do
   owner WS_USER
 end
 
+bonus_pack_dir = "#{Chef::Config[:file_cache_path]}/MarkedBonusPack1.5"
 execute "Install the Marked Services" do
-  command "cp -r #{installers_dir}/MarkedBonusPack1.5/Services/* ~/Library/Services"
+  command "cp -r #{bonus_pack_dir}/Services/* ~/Library/Services"
+  user WS_USER
 end
 
 execute "Install the Textmate bundle if Textmate is installed" do
-  command "cp -r #{installers_dir}/MarkedBonusPack1.5/Textmate/Marked.tmbundle \"#{WS_HOME}/Library/Application Support/TextMate/Bundles\""
+  command "cp -r #{bonus_pack_dir}/Textmate/Marked.tmbundle \"#{WS_HOME}/Library/Application Support/TextMate/Bundles\""
+  user WS_USER
   not_if { `ls /Applications | grep TextMate`.length == 0}
 end
