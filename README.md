@@ -2,14 +2,14 @@
 
 For when I need to configure a new Mac.
 
-Uses the [Pivotal Workstation Cookbook](http://github.com/pivotal/pivotal_workstation) cookbook, eventually my own cookbook, and a soloistrc file for installing all the things.
+Uses the [Pivotal Workstation Cookbook](http://github.com/pivotal/pivotal_workstation) cookbook, my own recipes, and a soloistrc file for installing all the things.
 
 ## Instructions
 
-From a clean Lion install:
+From a clean Mountain Lion install:
 
 * Install XCode
-* Go to XCode Preferences &amp; install the command line tools (installs `git`)
+* Go to XCode Preferences &amp; install the command line tools (installs necessary build tools)
 
 Then:
 
@@ -24,13 +24,14 @@ Then:
 	$ soloist
 ```
 
+Or, use the `bootstrap.rb` file in root to get all the prerequistes installed...
+
+
 ## TODO
 
 * Set MacOS clock to analog in menu bar
-* Set Fn keys as Fn keys
 * Turn off Genie animation to Dock
-* Turn on two-button mouse
-* Kill the installers directory and instead use the Chef cache
+* Turn on two-button mouse click for Apple mice
 
 ## License
 
