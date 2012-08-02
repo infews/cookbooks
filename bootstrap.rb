@@ -3,8 +3,9 @@
 #
 # Bootstrap script to setup for Chef soloist run
 #
-# Assumes a USB key or DMG, with a volume name of 'Boostrap' that has XCode.dmg
+# Assumes a USB key or DMG, with a volume name of 'Untitled' that has the XCode.dmg
 #
+# bash <(curl -s https://raw.github.com/infews/cookbooks/master/bootstrap.rb)
 
 # install XCode from a flash drive
 puts "---> Installing XCode. Make sure to install the Command Line Tools"
