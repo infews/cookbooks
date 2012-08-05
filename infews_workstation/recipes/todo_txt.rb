@@ -14,6 +14,6 @@ end
 
 execute "copy config file from Dropbox" do
   command "cp #{WS_HOME}/Dropbox/todo/config #{WS_HOME}/.todo/config"
-  owner WS_USER
+  user WS_USER
   only_if { File.exist? "#{WS_HOME}/Dropbox/todo"}
 end
