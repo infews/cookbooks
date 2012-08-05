@@ -27,6 +27,11 @@ end
 solarized_jetbrains_theme_directory = "#{solarized_dir}/intellij-colors-solarized"
 jetbrains_theme_dir = "#{WS_HOME}/Library/Preferences/RubyMine40/colors/"
 
+directory "#{WS_HOME}/Library/Preferences/RubyMine40/colors/" do
+  recursive true
+  user WS_USER
+end
+
 execute "Add Solarized Dark for RubyMine" do
   command "cp \"#{solarized_jetbrains_theme_directory}/Solarized\ Dark.xml\" #{jetbrains_theme_dir}"
   user WS_USER
