@@ -29,7 +29,7 @@ recipes:
   - pivotal_workstation::git_scripts
   - pivotal_workstation::gitx
   - pivotal_workstation::github_for_mac
-#  - pivotal_workstation::vim
+  - pivotal_workstation::vim
   - pivotal_workstation::textmate
   - pivotal_workstation::textmate_bundles
   - pivotal_workstation::textmate_preferences

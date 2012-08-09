@@ -32,6 +32,8 @@ Or, use the `bootstrap.rb` file in root to get all the prerequistes installed...
 * Set MacOS clock to analog in menu bar
 * Turn off Genie animation to Dock
 * Turn on two-button mouse click for Apple mice
+* Install Google Voice/Talk
+* Fix/choose a better Solarized for Rubymine (and separate from the Terminal recipe)
 
 ## License
 
