@@ -15,9 +15,7 @@ Then:
 
 ```sh
 	$ cd
-	$ git clone git@github.com:infews/cookbooks.git
-	$ cd cookbooks
-	$ git submodule update --init # pulls in pivotal_workstation cookbook
+	$ git clone --recursive git@github.com:infews/cookbooks.git
 	$ cd pivotal_workstation && git pull && cd ..
 	$ sudo gem install soloist
 	$ # review all recipes, starting from soloistrc
@@ -25,7 +23,6 @@ Then:
 ```
 
 Or, use the `bootstrap.rb` file in root to get all the prerequistes installed...
-
 
 ## TODO
 

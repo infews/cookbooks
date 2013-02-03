@@ -29,7 +29,7 @@ recipes:
   - pivotal_workstation::git_scripts
   - pivotal_workstation::gitx
   - pivotal_workstation::github_for_mac
-  - pivotal_workstation::vim
+#  - pivotal_workstation::vim
   - pivotal_workstation::textmate
   - pivotal_workstation::textmate_bundles
   - pivotal_workstation::textmate_preferences
@@ -64,6 +64,7 @@ recipes:
   - infews_workstation::os_x_defaults_screen
   - infews_workstation::os_x_defaults_input
   - infews_workstation::post_first_run
+  - infews_workstation::hostname
 # RUN THESE AFTER DROPBOX IS INSTALLED, RUN ONCE, AND CONNECTED
 #  - infews_workstation::todo_txt
 #  - infews_workstation::ssh_dir_on_dropbox
@@ -71,3 +72,4 @@ recipes:
 
 node_attributes:
   qs_version: B69 # Quicksilver Version
+  hostname: ""
