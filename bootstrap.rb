@@ -5,7 +5,7 @@
 # ruby <(curl -s https://raw.github.com/infews/cookbooks/master/bootstrap.rb)
 
 def log_step(str)
-  "---> \033[32m#{str}\033[0m"
+  puts "---> \033[32m#{str}\033[0m"
 end
 
 # install XCode from a flash drive
